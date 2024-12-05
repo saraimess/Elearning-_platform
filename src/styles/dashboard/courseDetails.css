@@ -1,0 +1,408 @@
+.course-details-header {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.course-details-header h1 {
+  margin: 0 0 1rem;
+  color: #2c3e50;
+}
+
+.course-meta {
+  display: flex;
+  gap: 2rem;
+  color: #666;
+}
+
+.course-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.chapters-container {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.chapter-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+.chapter-header {
+  padding: 1.5rem;
+  background: #f8f9fa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chapter-header h3 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.chapter-duration {
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lessons-list {
+  padding: 1rem;
+}
+
+.lesson-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lesson-item:last-child {
+  border-bottom: none;
+}
+
+.lesson-item:hover {
+  background: #f8f9fa;
+}
+
+.lesson-item.active {
+  background: #e3f2fd;
+}
+
+.lesson-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.lesson-info i {
+  font-size: 1rem;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+.lesson-info i.fa-flag {
+  color: #4CAF50;
+}
+
+.lesson-info i.fa-info-circle {
+  color: #2196F3;
+}
+
+.lesson-info i.fa-cog {
+  color: #FF9800;
+}
+
+.lesson-info i.fa-book {
+  color: #9C27B0;
+}
+
+.lesson-info i.fa-play-circle {
+  color: #1976d2;
+}
+
+.lesson-info i.fa-check-circle {
+  color: #4caf50;
+}
+
+.lesson-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.lesson-duration {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.material-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.material-icons i {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.material-icons i.fa-play {
+  color: #1976d2;
+}
+
+.material-icons i.fa-file-pdf {
+  color: #dc3545;
+}
+
+.course-content {
+  margin-top: 2rem;
+}
+
+.lesson-viewer {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.lesson-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.lesson-header h2 {
+  margin: 0 0 1rem 0;
+  color: #2c3e50;
+}
+
+.material-tabs {
+  display: flex;
+  gap: 1rem;
+}
+
+.material-tab {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: #f8f9fa;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.material-tab:hover {
+  background: #e9ecef;
+}
+
+.material-tab.active {
+  background: #1976d2;
+  color: white;
+}
+
+.material-tab i {
+  font-size: 1.1rem;
+}
+
+.material-viewer {
+  padding: 1.5rem;
+}
+
+.video-player {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: #000;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.video-player video {
+  width: 100%;
+  height: 100%;
+}
+
+.pdf-viewer {
+  width: 100%;
+  height: 600px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pdf-viewer iframe {
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .material-tabs {
+    flex-wrap: wrap;
+  }
+
+  .material-tab {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .lesson-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .lesson-meta {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.video-player-container {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.video-player {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: #000;
+}
+
+.video-player video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.video-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.play-pause-btn,
+.fullscreen-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.play-pause-btn:hover,
+.fullscreen-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.progress-bar {
+  flex: 1;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+.progress {
+  height: 100%;
+  background: var(--primary-color);
+  border-radius: 2px;
+  transition: width 0.1s linear;
+}
+
+.time-display {
+  font-size: 0.875rem;
+  min-width: 100px;
+  text-align: center;
+}
+
+.video-info {
+  padding: 1.5rem;
+  border-top: 1px solid #eee;
+}
+
+.video-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.action-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.action-btn:hover {
+  background: #f8f9fa;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.progress-bar:hover::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  right: 0;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+}
+
+.lesson-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lesson-info i {
+  font-size: 1rem;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+.lesson-info i.fa-flag {
+  color: #4CAF50;
+}
+
+.lesson-info i.fa-info-circle {
+  color: #2196F3;
+}
+
+.lesson-info i.fa-cog {
+  color: #FF9800;
+}
+
+.lesson-info i.fa-book {
+  color: #9C27B0;
+}
+
+.lesson-info i.fa-play-circle {
+  color: #1976d2;
+}
+
+.lesson-info i.fa-check-circle {
+  color: #4caf50;
+} 
