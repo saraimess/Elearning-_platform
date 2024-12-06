@@ -1,0 +1,246 @@
+.profile-container {
+    padding: 24px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin: 20px;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.profile-header-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-header-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #f0f0f0;
+}
+
+.profile-header-info h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.profile-image-container {
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.edit-photo-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    color: #666;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.edit-photo-icon:hover {
+    background-color: #f8f9fa;
+    color: #1976d2;
+}
+
+.edit-photo-icon i {
+    font-size: 0.8rem;
+}
+
+.edit-profile-btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: #1976d2;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-profile-btn:hover {
+    background-color: #1565c0;
+}
+
+.edit-profile-btn.save {
+    background-color: #4caf50;
+}
+
+.edit-profile-btn.save:hover {
+    background-color: #43a047;
+}
+
+.profile-content {
+    display: flex;
+    gap: 48px;
+}
+
+.profile-image-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #f0f0f0;
+}
+
+.profile-form {
+    flex: 1;
+}
+
+.form-row {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.form-group.full-width {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.form-group input:disabled,
+.form-group textarea:disabled {
+    background-color: #f8f9fa;
+    cursor: not-allowed;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.editable-field {
+    position: relative;
+}
+
+.view-mode {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.edit-mode {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-mode input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #1976d2;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.edit-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.edit-field-btn,
+.save-btn,
+.cancel-btn {
+    background: none;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-field-btn {
+    color: #666;
+}
+
+.edit-field-btn:hover {
+    background-color: #eee;
+}
+
+.save-btn {
+    color: #4caf50;
+}
+
+.save-btn:hover {
+    background-color: #e8f5e9;
+}
+
+.cancel-btn {
+    color: #f44336;
+}
+
+.cancel-btn:hover {
+    background-color: #ffebee;
+}
+
+.camera-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #1976d2;
+    color: white;
+    border-radius: 50%;
+    padding: 4px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.profile-image-container:hover .camera-icon {
+    opacity: 1;
+}
